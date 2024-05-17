@@ -1,10 +1,13 @@
 import React from "react";
 import NoteCard from "./components/NoteCard";
+import './App.css';
 
-function App(){
+function App() {
   return (
-    NoteCard
+    <div className="App-newBack">
+      <NoteCard />
+    </div>
   );
 }
 
-export default App();
+export default App;

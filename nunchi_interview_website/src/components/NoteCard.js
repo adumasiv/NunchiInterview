@@ -1,50 +1,27 @@
 import { Container, Box, Grid } from "@mui/material";
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Divider from '@mui/material/Divider';
-import imageUrl from '/Users/averyiv/git/NunchiInterview/nunchi_interview_website/src/pictures/AdobeStock_219633151.jpeg';
-import imageUrl2 from '/Users/averyiv/git/NunchiInterview/nunchi_interview_website/src/pictures/AdobeStock_213793387.jpeg';
-import imageUrl3 from '/Users/averyiv/git/NunchiInterview/nunchi_interview_website/src/pictures/AdobeStock_279788359.jpeg';
-import avatarImage from '/Users/averyiv/git/NunchiInterview/nunchi_interview_website/src/pictures/Avatar Icon.png';
-import buttonImage from '/Users/averyiv/git/NunchiInterview/nunchi_interview_website/src/pictures/OptionsButton.png';
+import imageUrl from '../pictures/AdobeStock_219633151.jpeg';
+import imageUrl2 from '../pictures/AdobeStock_213793387.jpeg';
+import imageUrl3 from '../pictures/AdobeStock_279788359.jpeg';
+import avatarImage from '../pictures/Avatar Icon.png';
+import buttonImage from '../pictures/OptionsButton.png';
 
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
-  transition: theme.transitions.create('transform', {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
-
-function NoteCard() {
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+function NoteCard() 
+{
 
   return (
     
-    <Container variant="outlined" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>{/* Container that holds the card component*/}
+    <Container variant="outlined" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>{/* Container that holds the expiring card component*/}
       <Box> 
-        <Card sx={{ maxWidth: 600, borderRadius: 8 }}> {/* Main card component */}
+        <Card sx={{ maxWidth: 600, borderRadius: 6 }}> {/* Main card component */}
           <CardHeader 
             avatar={
               <Avatar src={avatarImage} aria-label="Avatar icon" /> 
@@ -62,9 +39,9 @@ function NoteCard() {
             }
           />
           <Divider variant="middle" />
-          <Grid container> {/* First Container that holds the first row of elements */}
+          <Grid container> {/* First grid that holds the first row of elements */}
             <Grid item xs={12} sm={6}>
-              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 2 }}> {/* Box for the left side of the first contianer */}
+              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 2 }}> {/* Box for the left side of the first grid */}
                 <CardMedia
                   component="img"
                   sx={{ width: 100, height: 100, objectFit: 'cover'}}
@@ -80,7 +57,7 @@ function NoteCard() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 3 }}> {/* Box for the right side of the first contianer */}
+              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 3 }}> {/* Box for the right side of the first grid */}
                 <CardContent>
                   <Typography variant="body2" color="text.secondary">
                     #product, photography, healthcare, MI angel, newyork, startups, fintech
@@ -89,9 +66,9 @@ function NoteCard() {
               </Box>
             </Grid>
           </Grid>
-          <Grid container> {/* Second container that holds the second row of elements*/}
+          <Grid container> {/* Second grid that holds the second row of elements*/}
             <Grid item xs={12} sm={6}>
-              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 2 }}> {/* Box for the left side of the second contianer */}
+              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 2 }}> {/* Box for the left side of the second grid */}
                 <CardMedia
                   component="img"
                   sx={{ width: 100, height: 100, objectFit: 'cover'}}
@@ -107,7 +84,7 @@ function NoteCard() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 3 }}> {/* Box for the right side of the second contianer */}
+              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 3 }}> {/* Box for the right side of the second grid */}
                 <CardContent>
                   <Typography variant="body2" color="text.secondary">
                     #innovation, businessstrategy, healthcare, chicago, techstartups, design
@@ -116,9 +93,9 @@ function NoteCard() {
               </Box>
             </Grid>
           </Grid>
-          <Grid container> {/* Third Container that holds the third row of elements */}
+          <Grid container> {/* Third grid that holds the third row of elements */}
             <Grid item xs={12} sm={6}>
-              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 2 }}> {/* Box for the left side of the third contianer */}
+              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 2 }}> {/* Box for the left side of the third grid */}
                 <CardMedia
                   component="img"
                   sx={{ width: 100, height: 100, objectFit: 'cover'}}
@@ -134,7 +111,7 @@ function NoteCard() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 3 }}> {/* Box for the right side of the third contianer */}
+              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', my: 3 }}> {/* Box for the right side of the third grid */}
                 <CardContent>
                   <Typography variant="body2" color="text.secondary">
                     #founder, angel, teamlead, OH, innovator, tech, marketing, dev

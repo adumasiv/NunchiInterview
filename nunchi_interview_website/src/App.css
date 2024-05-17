@@ -24,6 +24,15 @@
   color: white;
 }
 
+.App-newBack{
+  background-color: #e4e3e4;
+  position: absolute;
+  top: 0;
+  left:0 ;
+  right: 0;
+  bottom: 0;
+}
+
 .App-link {
   color: #61dafb;
 }
