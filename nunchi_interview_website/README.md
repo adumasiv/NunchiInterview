@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+Membership Expiration Card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
 
-## Available Scripts
+The Membership Expiration Card is a React application that displays a list of memberships that are about to expire. Each membership is presented with relevant details such as the member's name, profile picture, expiration date, and tags associated with the member. The app uses Material-UI for styling and component management.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+Display a list of memberships with details.
+Highlight memberships that are expiring soon.
+Use of Material-UI components for consistent styling.
+Customizable icons and images.
 
-Runs the app in the development mode.\
+Project Structure
+
+src/
+├── components/
+│   └── NoteCard.js
+├── pictures/
+│   ├── AdobeStock_219633151.jpeg
+│   ├── AdobeStock_213793387.jpeg
+│   ├── AdobeStock_279788359.jpeg
+│   ├── Avatar Icon.png
+│   └── OptionsButton.png
+├── App.js
+├── App.css
+└── index.js
+
+Installation
+
+Prerequisites
+Node.js (>=14.x)
+npm (>=6.x) or yarn (>=1.x)
+
+Usage
+
+To start development server
+
+npm start
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+File Descriptions
+App.js: The main entry point of the React app, where the NoteCard component is imported and rendered.
+components/NoteCard.js: Contains the NoteCard component which displays the membership details using Material-UI components.
+App.css: Contains the global CSS styles for the app.
+index.js: The entry point for the React DOM rendering.
 
-### `npm test`
+Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React
+Material-UI
+React Icons (for customizable icon options)
+A list of all dependencies can be found in package.json
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
