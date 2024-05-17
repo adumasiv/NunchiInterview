@@ -1,9 +1,10 @@
-import { Container, Typography } from "@mui/material";
-function App()
-{
-  return <Container sx={{bgcolor: "tomato", height: "100vh"}}>
-    <Typography variant= "h1">HeyNunchi Interview</Typography>
-  </Container>
+import React from "react";
+import NoteCard from "./components/NoteCard";
+
+function App(){
+  return (
+    NoteCard
+  );
 }
 
-export default App;
+export default App();
